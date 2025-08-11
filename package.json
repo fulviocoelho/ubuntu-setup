@@ -1,0 +1,12 @@
+{
+  "name": "ubuntu-setup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:fulviocoelho/ubuntu-setup.git",
+  "author": "Fulvio Coelho <coelho.fulvio@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "docker build -t meu-apache . && docker run -d --name apache-lan -p 80:80 meu-apache",
+    "stop": "docker stop $(docker ps -a -q) && docker system prune -a -f"
+  }
+}
