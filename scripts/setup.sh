@@ -48,7 +48,7 @@ npm -v # Should print "10.9.3".
 
 echo "---- Python ----"
 
-sudo apt install python3 python3-pip-y
+sudo apt install python3 python3-pip -y
 
 echo "--- Chrome ----"
 
